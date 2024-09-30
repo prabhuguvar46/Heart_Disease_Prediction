@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="heart_page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <h5>Upload Your Image</h5>
+        <input type="file" id="fileInput" accept="image/*">
+        <div class="image-preview" id="imagePreview">
+            <img id="image" alt="Image Preview">
+        </div>
+        <button id="predictButton">Predict</button>
+        <button id="reportButton">Show Report</button>
+        <div id="predictionResult"></div>
+       
+        <div id="reportModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Report:</h3>
+                <div id="report"></div>
+            </div>
+        </div>
+    </div>
+    <script src="heart_page.js"></script>
+</body>
+</html>
